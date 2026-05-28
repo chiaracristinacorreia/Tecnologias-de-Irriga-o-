@@ -1,1 +1,19 @@
+function calcularEconomia() {
+    const hectares = parseFloat(document.getElementById('campoHectares').value);
+    
+    if (isNaN(hectares) || hectares <= 0) {
+        alert("Por favor, insira um valor válido de hectares.");
+        return;
+    }
 
+    // Base teórica: Economia estimada de 40.000 litros por hectare/dia
+    const economiaLitrosDia = hectares * 40000;
+    const economiaMes = economiaLitrosDia * 30;
+
+    // Exibe o resultado na tela de forma amigável
+    document.getElementById('resultado').innerHTML = `
+        <h3>Resultado da Economia Estimada:</h3>
+        <p>Ao mudar para o gotejamento, sua propriedade economizará cerca de <strong>${economiaLitrosDia.toLocaleString('pt-BR')} litros</strong> de água por dia!</p>
+        <p>No mês, isso equivale a uma preservação de <strong>${economiaMes.toLocaleString('pt-BR')} litros</strong>.</p>
+    `;
+}
