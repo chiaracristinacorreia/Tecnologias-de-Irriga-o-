@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irriga+ | Tecnologias Sustentáveis</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <div class="barra-acessibilidade">
+        <button onclick="alterarFonte('aumentar')">A+</button>
+        <button onclick="alterarFonte('diminuir')">A-</button>
+        <button onclick="alternarContraste()">Alternar Contraste</button>
+        <button onclick="ouvirTexto()">🔊 Ler Página</button>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">Irriga+</div>
+            <ul>
+                <li><a href="index.html">Tecnologias</a></li>
+                <li><a href="calculadora.html">Calculadora de Economia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <section class="banner">
+            <h1>Tecnologia que protege a água no campo</h1>
+            <p>Descubra como a inovação evita o desperdício e aumenta a produtividade.</p>
+        </section>
+
+        <section class="cards-container">
+            <div class="card">
+                <img src="assets/gotejamento.jpg" alt="Sistema de tubos aplicando água direto na raiz da planta">
+                <h3>Irrigação por Gotejamento</h3>
+                <p>Direciona a água diretamente para a raiz da planta. Evita a evaporação e alcança até <strong>95% de eficiência</strong> hídrica.</p>
+            </div>
+            </section>
+    </main>
+
+    <script src="js/acessibilidade.js"></script>
+</body>
+</html>
